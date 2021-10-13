@@ -1,9 +1,9 @@
 // for-loop
 
-var loopFactorial = function (n: number): number {
-  var result = 1;
+const loopFactorial = function (n: number): number {
+  let result = 1;
 
-  for (var i = 1; i <= n; i++) {
+  for (let i = 1; i <= n; i++) {
     result = result * i;
   }
 
@@ -17,4 +17,4 @@ const recursiveFactorial = function (n: number): number {
   return recursiveFactorial(n - 1) * n;
 };
 
-console.log(recursiveFactorial(5))
+console.log(recursiveFactorial(5));
