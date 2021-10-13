@@ -67,12 +67,6 @@ class linkedList {
             data.next = preceedingNode.next;
             preceedingNode.next = data;
         };
-        this.remove = (value) => {
-            if (typeof value === 'number') {
-                return 1;
-            }
-            return -1;
-        };
         this.visualize = () => {
             let pointer = this.head;
             let result = '';
@@ -93,4 +87,4 @@ linked1.append(new node(50));
 linked1.prepend(new node(20));
 linked1.insert(new node(40), 2);
 console.log(linked1.size());
-console.log(linked1.remove(new node(30)));
+// console.log(linked1.remove(new node(30)));

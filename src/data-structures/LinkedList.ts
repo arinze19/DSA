@@ -96,3 +96,4 @@ linked1.append(new node<number>(50));
 linked1.prepend(new node<number>(20));
 linked1.insert(new node<number>(40), 2);
 console.log(linked1.size());
+// console.log(linked1.remove(new node(30)));
