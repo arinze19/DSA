@@ -1,0 +1,1 @@
+const search = require('../../src/algorithms/search')
