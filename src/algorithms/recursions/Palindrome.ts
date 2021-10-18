@@ -10,7 +10,7 @@ const lastCharacter = function (str: string): string {
   return str.slice(-1);
 };
 
-const isPalindrome = function (str: string): boolean {
+export const isPalindrome = function (str: string): boolean {
   // base case #1
   if (str.length <= 1) {
     return true;
@@ -22,7 +22,3 @@ const isPalindrome = function (str: string): boolean {
   // recursive case
   return isPalindrome(middleCharacters(str));
 };
-
-console.log(isPalindrome('rotor'));
-console.log(isPalindrome('motor'));
-console.log(isPalindrome('chyme'));

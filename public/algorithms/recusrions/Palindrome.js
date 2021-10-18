@@ -20,6 +20,3 @@ const isPalindrome = function (str) {
     // recursive case
     return isPalindrome(middleCharacters(str));
 };
-console.log(isPalindrome('rotor'));
-console.log(isPalindrome('motor'));
-console.log(isPalindrome('chyme'));
