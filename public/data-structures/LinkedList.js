@@ -29,13 +29,15 @@ var linkedList = /** @class */ (function () {
             return counter;
         };
         this.search = function (data) {
+            var position = 1;
             var pointer = _this.head;
             while (pointer) {
                 if (pointer.data !== data.data) {
                     pointer = pointer.next;
+                    position += 1;
                 }
                 else {
-                    return pointer;
+                    return { position: position, searchQuery: pointer };
                 }
             }
             return null;
@@ -87,3 +89,8 @@ var linkedList = /** @class */ (function () {
     return linkedList;
 }());
 exports.linkedList = linkedList;
+var nodeOne = new node(10);
+var list = new linkedList(nodeOne);
+list.prepend(new node(15));
+list.append(new node(30));
+console.log(list.search(new node(30)));

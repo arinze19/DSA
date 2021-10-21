@@ -25,13 +25,15 @@ export class linkedList<T> {
     return counter;
   };
   search = (data: node<T>) => {
-    let pointer = this.head
+    let position = 1;
+    let pointer = this.head;
 
-    while(pointer) {
-      if(pointer.data !== data.data) {
+    while (pointer) {
+      if (pointer.data !== data.data) {
         pointer = pointer.next;
+        position += 1;
       } else {
-        return pointer;
+        return { position: position, searchQuery: pointer };
       }
     }
 
@@ -79,11 +81,18 @@ export class linkedList<T> {
 
     while (pointer) {
       result += `[${pointer.data}] ->`;
-      pointer = pointer.next
+      pointer = pointer.next;
     }
 
-    result += `${null}`
+    result += `${null}`;
 
     return result;
   };
 }
+
+const nodeOne = new node<number>(10);
+const list = new linkedList(nodeOne);
+list.prepend(new node<number>(15));
+list.append(new node<number>(30));
+
+console.log(list.search(new node<number>(30)));

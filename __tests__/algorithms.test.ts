@@ -5,6 +5,7 @@ import {
 } from '../src/algorithms/recursions/FactorialFunction';
 import { binarySearch } from '../src/algorithms/search/BinarySearch';
 import { linearSearch } from '../src/algorithms/search/LinearSearch';
+import { mergeSort } from '../src/algorithms/sorting/MergeSort';
 import { insertionSort } from '../src/algorithms/sorting/InsertionSort';
 import { selectionSort } from '../src/algorithms/sorting/SelectionSort';
 
@@ -28,4 +29,5 @@ test('Sort an array of numbers', () => {
   const numbers = [10, 9, 15, 2, 34, 19, 90, 46, 88];
   expect(insertionSort(numbers)).toStrictEqual([2, 9, 10, 15, 19, 34, 46, 88, 90]);
   expect(selectionSort(numbers)).toStrictEqual([2, 9, 10, 15, 19, 34, 46, 88, 90]);
+  expect(mergeSort(numbers)).toStrictEqual([2, 9, 10, 15, 19, 34, 46, 88, 90]);
 });
