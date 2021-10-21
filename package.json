@@ -5,8 +5,8 @@
   "author": "Arinze Obi",
   "private": "false",
   "scripts": {
-    "test:algorithms": "npm run --recursive \"./tests/algorithms/*.js\" --reporter spec --exit",
-    "test:data-structures": "npm run --recursive \"./tests/data-structures/*.js\" --reporter spec --exit",
+    "test:algorithms": "jest \"./__tests__/algorithms.test.ts\"",
+    "test:data-structures": "jest \"./__tests__/data-structures.test.ts\"",
     "test": "jest"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 type SearchValue = number | string;
 
-const binarySearch = (list: SearchValue[], target: SearchValue): number => {
+export const binarySearch = (list: SearchValue[], target: SearchValue): number => {
   let first = 0;
   let last = list.length - 1;
 
@@ -18,5 +18,3 @@ const binarySearch = (list: SearchValue[], target: SearchValue): number => {
 
   return -1;
 };
-
-export default binarySearch;

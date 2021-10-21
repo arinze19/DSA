@@ -2,7 +2,7 @@
 // single linked list - node stores reference to it's successor
 // doubly linked list - node stores reference to both it's predecessor and successor
 
-class node<T> {
+export class node<T> {
   next: node<T> | null = null;
 
   constructor(public data: T) {
@@ -10,7 +10,7 @@ class node<T> {
   }
 }
 
-class linkedList<T> {
+export class linkedList<T> {
   constructor(public head: node<T> | null = null) {}
   isEmpty = () => this.head === null;
   size = () => {
@@ -87,13 +87,3 @@ class linkedList<T> {
     return result;
   };
 }
-
-const node1 = new node<number>(5);
-const linked1 = new linkedList(node1);
-linked1.append(new node<number>(10));
-linked1.append(new node<number>(30));
-linked1.append(new node<number>(50));
-linked1.prepend(new node<number>(20));
-linked1.insert(new node<number>(40), 2);
-console.log(linked1.size());
-// console.log(linked1.remove(new node(30)));

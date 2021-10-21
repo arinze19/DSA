@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.insertionSort = void 0;
 var insert = function (array, rightIndex, value) {
     for (var j = rightIndex; j >= 0 && array[j] > value; j--) {
         array[j + 1] = array[j];
@@ -9,7 +11,6 @@ var insertionSort = function (array) {
     for (var i = 0; i < array.length - 1; i++) {
         insert(array, i, array[i + 1]);
     }
+    return array;
 };
-var array = [22, 11, 99, 88, 9, 7, 42];
-insertionSort(array);
-console.log(array);
+exports.insertionSort = insertionSort;

@@ -1,10 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const binarySearch = (list, target) => {
-    let first = 0;
-    let last = list.length - 1;
+exports.binarySearch = void 0;
+var binarySearch = function (list, target) {
+    var first = 0;
+    var last = list.length - 1;
     do {
-        const midPoint = Math.floor((first + last) / 2);
+        var midPoint = Math.floor((first + last) / 2);
         if (list[midPoint] == target)
             return midPoint;
         if (list[midPoint] < target) {
@@ -16,4 +17,4 @@ const binarySearch = (list, target) => {
     } while (first <= last);
     return -1;
 };
-exports.default = binarySearch;
+exports.binarySearch = binarySearch;
