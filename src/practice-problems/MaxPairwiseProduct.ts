@@ -1,6 +1,9 @@
 /*
 Objective: Given an array of integers, return the product of the two 
 largest integers in the array
+
+Time Complexity - O(n)
+Space Complexity - 0(1)
 */
 
 const maxPairwiseProduct = (array: number[]): number | void => {
