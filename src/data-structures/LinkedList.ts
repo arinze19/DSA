@@ -94,5 +94,3 @@ const nodeOne = new node<number>(10);
 const list = new linkedList(nodeOne);
 list.prepend(new node<number>(15));
 list.append(new node<number>(30));
-
-console.log(list.search(new node<number>(30)));

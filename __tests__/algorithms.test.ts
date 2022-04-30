@@ -1,8 +1,5 @@
 import { isPalindrome } from '../src/algorithms/recursions/Palindrome';
-import {
-  loopFactorial,
-  recursiveFactorial,
-} from '../src/algorithms/recursions/FactorialFunction';
+import { loopFactorial, recursiveFactorial } from '../src/algorithms/recursions/FactorialFunction';
 import { binarySearch } from '../src/algorithms/search/BinarySearch';
 import { linearSearch } from '../src/algorithms/search/LinearSearch';
 import { mergeSort } from '../src/algorithms/sorting/MergeSort';

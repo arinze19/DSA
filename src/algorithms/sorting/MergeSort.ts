@@ -31,7 +31,7 @@ const combine = (a: number[], b: number[]): number[] => {
 };
 
 export const mergeSort = (array: number[]): number[] => {
-  if (array.length < 1) return array;
+  if (array.length < 2) return array;
 
   const midPoint = Math.floor(array.length / 2);
   let leftHalf = array.slice(0, midPoint);
