@@ -1,4 +1,4 @@
-import { twoNumberSum } from './TwoNumberSum';
+import { twoNumberSum } from './twoNumberSum';
 
 test('Determine If array contains elements that add up to target sum', () => {
     expect(twoNumberSum([3, 5, -4, 8, 11, 1, -1, 6], 10)).toEqual([11, -1])
