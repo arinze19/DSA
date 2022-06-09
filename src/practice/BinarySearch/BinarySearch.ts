@@ -1,3 +1,10 @@
+/**
+ * Implement Binary Search
+ */
+
+
+
+
 export const binarySearch = (array: number[], target: number) => {
   let first = 0;
   let last = array.length - 1;
