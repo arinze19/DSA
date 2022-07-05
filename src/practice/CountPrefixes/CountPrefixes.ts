@@ -16,21 +16,27 @@
  */
 
 export const countPrefixes = (words: string[], s: string): number => {
-  const results: string[] = [];
-
-  for (let i = 0; i < words.length; i++) {
-    let word = '';
-    for (let j = 0; j < words[i].length; j++) {
-      if (words[i][j] === s[j]) {
-        word += words[i][j];
-      } else {
-        word = '';
-        break;
+    let pointer = 0;
+    let count = 0;
+  
+    do {
+      let isPrefix = false;
+  
+      for (let i = 0; i < words[pointer].length; i++) {
+        if (words[pointer][i] === s[i]) {
+          isPrefix = true;
+        } else {
+          isPrefix = false;
+          break;
+        }
       }
-    }
-
-    results.push(word);
-  }
-
-  return results.filter(item => item !== '').length;
+  
+      if (isPrefix) {
+        count++;
+      }
+  
+      pointer++;
+    } while (pointer < words.length);
+  
+    return count;
 };
