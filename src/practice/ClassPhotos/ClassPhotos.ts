@@ -25,26 +25,22 @@ export const classPhotos = (
 ) => {
   // Write your code here.
   /**
-   * loop
-   * on each iteration we check whether arr1[i] > arr2[i]
-   *    if not return false
-   *    if return true
-   * determine which array has the highest first integer
-   * const arr1 = red[0] > blue[0] ? red : blue
-   * const arr2 = red[0] < blue[0] ? red : blue
+   * Sort the array 
+   * find out which has the tallest value
+   * assign the back row to the array with the highest value
+   * comapre
    */
-  const arr1 =
-    redShirtHeights[0] > blueShirtHeights[0]
-      ? [...redShirtHeights]
-      : [...blueShirtHeights];
-  const arr2 =
-    redShirtHeights[0] < blueShirtHeights[0]
-      ? [...redShirtHeights]
-      : [...blueShirtHeights];
+  redShirtHeights.sort((a, b) => a - b);
+  blueShirtHeights.sort((a, b) => a - b);
 
-  for (let i = 0; i < redShirtHeights.length; i++) {
-    if (arr1[i] < arr2[i]) return false;
+  const backwardArray = Math.max(redShirtHeights[redShirtHeights.length - 1], blueShirtHeights[blueShirtHeights.length - 1]) === redShirtHeights[redShirtHeights.length - 1] ? redShirtHeights : blueShirtHeights
+  const forwardArray = Math.min(redShirtHeights[redShirtHeights.length - 1], blueShirtHeights[blueShirtHeights.length - 1]) === redShirtHeights[redShirtHeights.length - 1] ? redShirtHeights : blueShirtHeights
+
+  for(let i = 0; i < backwardArray.length; i++) {
+    if(backwardArray[i] <= forwardArray[i]) return false
   }
 
   return true;
 };
+
+console.log(classPhotos([5], [5]))
