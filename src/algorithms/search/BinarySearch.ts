@@ -18,3 +18,22 @@ export const binarySearch = (list: SearchValue[], target: SearchValue): number =
 
   return -1;
 };
+
+const binarySearch2 = (list: SearchValue[], target: SearchValue): number => {
+  while(list.length > 0) {
+    const midPoint = Math.floor((0 + list.length - 1) / 2);
+
+    if(list[midPoint] === target) return midPoint;
+
+    if(list[midPoint] < target) {
+      list.splice(midPoint)
+    } else {
+      list.splice(0, midPoint)
+    }
+  }
+
+  return -1
+}
+
+
+console.log(binarySearch2([1,2,3], 8))
