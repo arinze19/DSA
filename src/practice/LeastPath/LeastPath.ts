@@ -39,7 +39,3 @@
 
   return leastPath ? leastPath : -1;
 };
-
-console.log(
-  leastPath(['5', 'A', 'B', 'C', 'D', 'F', 'A-B', 'A-C', 'B-C', 'C-D', 'D-F'])
-);
