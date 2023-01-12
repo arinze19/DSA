@@ -29,5 +29,3 @@ const depthFirstSearch = (startNode: string): boolean | string => {
 const sellsDepthMangoes = (name: string): boolean => {
   return name.includes('i');
 };
-
-console.log(depthFirstSearch('Arinze'));

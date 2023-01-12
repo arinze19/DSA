@@ -34,6 +34,3 @@ const binarySearch2 = (list: SearchValue[], target: SearchValue): number => {
 
   return -1
 }
-
-
-console.log(binarySearch2([1,2,3], 8))

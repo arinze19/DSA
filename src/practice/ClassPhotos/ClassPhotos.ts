@@ -25,7 +25,7 @@ export const classPhotos = (
 ) => {
   // Write your code here.
   /**
-   * Sort the array 
+   * Sort the array
    * find out which has the tallest value
    * assign the back row to the array with the highest value
    * comapre
@@ -33,14 +33,24 @@ export const classPhotos = (
   redShirtHeights.sort((a, b) => a - b);
   blueShirtHeights.sort((a, b) => a - b);
 
-  const backwardArray = Math.max(redShirtHeights[redShirtHeights.length - 1], blueShirtHeights[blueShirtHeights.length - 1]) === redShirtHeights[redShirtHeights.length - 1] ? redShirtHeights : blueShirtHeights
-  const forwardArray = Math.min(redShirtHeights[redShirtHeights.length - 1], blueShirtHeights[blueShirtHeights.length - 1]) === redShirtHeights[redShirtHeights.length - 1] ? redShirtHeights : blueShirtHeights
+  const backwardArray =
+    Math.max(
+      redShirtHeights[redShirtHeights.length - 1],
+      blueShirtHeights[blueShirtHeights.length - 1]
+    ) === redShirtHeights[redShirtHeights.length - 1]
+      ? redShirtHeights
+      : blueShirtHeights;
+  const forwardArray =
+    Math.min(
+      redShirtHeights[redShirtHeights.length - 1],
+      blueShirtHeights[blueShirtHeights.length - 1]
+    ) === redShirtHeights[redShirtHeights.length - 1]
+      ? redShirtHeights
+      : blueShirtHeights;
 
-  for(let i = 0; i < backwardArray.length; i++) {
-    if(backwardArray[i] <= forwardArray[i]) return false
+  for (let i = 0; i < backwardArray.length; i++) {
+    if (backwardArray[i] <= forwardArray[i]) return false;
   }
 
   return true;
 };
-
-console.log(classPhotos([5], [5]))

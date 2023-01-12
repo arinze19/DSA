@@ -35,10 +35,6 @@ const breadthFirstSearch = (startNode: string) => {
   return null;
 };
 
-
-
 const sellsMangoes = (name: string): boolean => {
   return name.includes('i');
 };
-
-console.log(depthFirstSearch('Arinze'));

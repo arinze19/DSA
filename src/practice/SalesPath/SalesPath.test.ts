@@ -1,10 +1,10 @@
 import { getCheapestCost, Node } from './SalesPath';
 
 test('Determine if sales path is shortest', () => {
-  class SalesNode  {
+  class SalesNode {
     cost: number;
     children: SalesNode[];
-    
+
     constructor(cost: number, children: Node[]) {
       this.cost = cost;
       this.children = children;
@@ -15,6 +15,4 @@ test('Determine if sales path is shortest', () => {
   const node2 = new SalesNode(4, [node4]);
   const node3 = new SalesNode(5, []);
   const node1 = new SalesNode(0, [node2, node3]);
-
-  console.log(getCheapestCost(node1));
 });
