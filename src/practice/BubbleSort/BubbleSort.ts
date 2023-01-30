@@ -1,7 +1,3 @@
-/**
- * Write a bubble sort function
- */
-
 export const bubbleSort = (array: number[]) => {
   let isSorted = false;
 
@@ -11,7 +7,7 @@ export const bubbleSort = (array: number[]) => {
     for (let i = 0; i < array.length; i++) {
       if (array[i] > array[i + 1]) {
         isSorted = false;
-        let temp = array[i];
+        const temp = array[i];
 
         array[i] = array[i + 1];
         array[i + 1] = temp;

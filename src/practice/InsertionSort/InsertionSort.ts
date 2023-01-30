@@ -10,7 +10,7 @@ export const insertionSort = (array: number[]) => {
     const sub = array.slice(0, i);
     for (let j = 0; j < sub.length; j++) {
       if (array[i] < sub[j]) {
-        let temp = array[i];
+        const temp = array[i];
 
         array[i] = sub[j];
         array[j] = temp;

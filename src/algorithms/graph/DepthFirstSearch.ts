@@ -15,7 +15,7 @@ map.set('Ellie', []);
 const depthFirstSearch = (startNode: string): boolean | string => {
   const connections = map.get(startNode);
 
-  for (let connection of connections!) {
+  for (const connection of connections!) {
     if (sellsMangoes(connection)) {
       return connection;
     }

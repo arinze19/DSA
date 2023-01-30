@@ -5,8 +5,6 @@
   "author": "Arinze Obi",
   "private": "false",
   "scripts": {
-    "test:algorithms": "jest \"./__tests__/algorithms.test.ts\"",
-    "test:data-structures": "jest \"./__tests__/data-structures.test.ts\"",
     "test": "jest"
   },
   "devDependencies": {

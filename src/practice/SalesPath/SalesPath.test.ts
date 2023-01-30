@@ -1,4 +1,4 @@
-import { getCheapestCost, Node } from './SalesPath';
+import { Node } from './SalesPath';
 
 test('Determine if sales path is shortest', () => {
   class SalesNode {
