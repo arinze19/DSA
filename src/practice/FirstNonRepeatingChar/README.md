@@ -21,3 +21,7 @@ const string = 'abcdcaf';
 ```bash
 O(n) | O(1)
 ```
+
+**UPDATE**
+
+Updated solution since `indexOf` actually runs in `O(n)` (see [here](https://stackoverflow.com/questions/19287033/what-is-the-time-complexity-of-javascripts-array-indexof)) making the previous solution actually `O(n)^2`
