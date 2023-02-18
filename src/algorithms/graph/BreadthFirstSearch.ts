@@ -20,9 +20,11 @@ const breadthFirstSearch = (startNode: string) => {
     const friend = queue.shift()!;
     const connections = map.get(friend);
 
+    if (!connections) return null;
+
     if (cache.indexOf(friend) === -1) {
       cache.push(friend);
-      for (let connection of connections!) {
+      for (const connection of connections!) {
         if (sellsMangoes(connection)) {
           return connection;
         }

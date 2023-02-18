@@ -2,3 +2,4 @@
 /public
 test.js
 test.ts
+*.log
