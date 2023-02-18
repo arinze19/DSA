@@ -1,5 +1,4 @@
 /node_modules
 /public
-test.js
-test.ts
+test*
 *.log
