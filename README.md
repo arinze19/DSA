@@ -17,12 +17,16 @@ src
  |__ practice
 ```
 
+## Texts and Books
+
+1. [Grokking Algorithms](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230) by Aditya Bhargava
+2. [Programming in Typescript](https://www.oreilly.com/library/view/programming-typescript/9781492037644/) by Boris Cherny
+
 ## Contributing
 
 Please feel free to fork the [REPO](https://github.com/arinze19/DSA-in-ts.git) or open up a [PR](https://github.com/arinze19/DSA-in-ts/pulls) with new ideas.
 
-
 ## Side Note
 
-Although this repository primarily serves `typescript` solutions, I occasionally write `c++` solutions too just because i like writing it so much. 
+Although this repository primarily serves `typescript` solutions, I occasionally write `c++` solutions too just because i like writing it so much.
 Please pay no attention to it as it's just a minor addition and not the main focus.
