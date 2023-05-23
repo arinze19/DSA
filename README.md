@@ -10,11 +10,14 @@ The `src` folder is divied up into three sections.
 2. curriculum: Structures learning curriculum and practice questions based of [neetcode](https://neetcode.io)
 3. practice: Practice questions
 
+The `CPE` folder is a separate dedicated folder for notes on inner logic and computer science fundamentals (typically written in C++)
+
 ```
 src
  |__ algorithms
  |__ curriculum
  |__ practice
+CPE
 ```
 
 ## Texts and Books
@@ -28,5 +31,4 @@ Please feel free to fork the [REPO](https://github.com/arinze19/DSA-in-ts.git) o
 
 ## Side Note
 
-Although this repository primarily serves `typescript` solutions, I occasionally write `c++` solutions too just because i like writing it so much.
-Please pay no attention to it as it's just a minor addition and not the main focus.
+Although this repository primarily serves `typescript` solutions, I occasionally write `c++` solutions as well to take a slightly higher control of memory management and runtime.

@@ -1,4 +1,5 @@
-export const nonConstructiblechange = (coins: number[]) => {  coins.sort((a, b) => a - b);
+export const nonConstructiblechange = (coins: number[]) => {
+  coins.sort((a, b) => a - b);
   let leastConstructibleChange = 0;
 
   for (const coin of coins) {
