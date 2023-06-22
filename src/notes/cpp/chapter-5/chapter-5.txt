@@ -1,0 +1,54 @@
+lvalue and rvalue 
+postfix and prefix of increment and decrement operator 
+
+LOOPS 
+    while loop, do-while loop and the for-loop
+    something inside the loop must eventually make the test expression false
+
+    while loops are especially useful for validating user input 
+
+    do-while loops are pretest loops while do-while loops are posttest loops 
+        pretest loops - expression is tested before each iteration 
+        posttest loops - expression is tested after each iteration [this guarantees that the do-while loop always iterates at least once ]
+    for-loops are useful when you know the amount of iterations you're going to  have to go through
+
+conditional-loops 
+count-controlled loops 
+
+avoid modifiying the "Counter Variable" in the body of the for loop
+
+it is possible to initialize more than one statement inside the "initialization expression" and "update expression" sections of the for loop
+all you have to do is seperate the statements with a comma (,)
+if you wish to connect multiple statements to the test expression, you should do so with the ( || ) operator
+
+Sentinels 
+
+// member function - functions on an object 
+// difference between a member function and a method [same thing]
+
+FILES 
+ - an output file is a file that data is read into
+ - when a piece of data is read from a file, it is copied from the file and stored into RAM 
+ - an input file is a file that data is read from 
+
+ steps in file processes 
+    - opening file
+    - processing file 
+    - closing file 
+TYPES OF FILES 
+   1. text files 
+   2. binary files (can't open in a text editor since data is in binary format)
+FILE ACCESS METHODS 
+    1. Sequential access 
+    2. Direct access (random access files)
+
+file stream object 
+linked to the file stream object 
+if you were to link an already existing file with ofstream, said file would be overwritten 
+it is possible to define an ofstram object and initialize it on the same line using the shortcut 
+    - ofstream outputFile("/path/to/file")
+you can close a file with the .close() member function
+    - outputFile.close()
+read position? 
+    - reads up until "\n" but doesn not include "\n" in it's output 
+    - the stream operator returns a boolean based on if a value was successfully written or read into a variable (if(cout << "1"))

@@ -1,0 +1,44 @@
+stream >> stream extractor operator
+    cin >> length >> width; 
+    in this scenario, having a space between length and width is how the program knows where length and width start and end respectively.
+When the user types values at the keyboard, those values are first stored in an area of memory known as the keyboard buffer.
+always a good idea to use parentheses when conducting expressions on the cout stream as some compilers may not suppport them without the parentheses.
+unlike other languages, cpp does not support an eponent operator 
+pow function only operates on doubles and produces doubles as well
+cpp perfoms type conversions to an extent just like javascript
+
+Just like officers in the military, data types are ranked. One data type outranks another if it can hold a larger number. For example, a float outranks an int.
+
+data type ranking 
+1. long double 
+2. double
+3. float 
+4. unsigned long 
+5. long
+6. unsigned int 
+7. int
+
+When a value is converted to a higher data type, it is said to be promoted. To demote a value means to convert it to a lower data type. Let’s look at the specific rules that govern the evaluation of mathematical expressions.
+rule1: chars, shorts and unsigned shorts are promoted to int before any operation is performed
+rule2: when an operation takes place, the lower ranking value is promoted to the same as the upper ranking value
+rule3: when final value is computer, the value is then converted again to the data type it's variable was/is assigned
+
+overflow and underflow of integers will have them wrap around to their lowest and highest bounds respectively.
+but worth it to note that this only happends on some compilers as your compiler may vary but generally, either of the following will happends
+
+1. Produces an incorrect result and continues running.
+2. Prints an error message and immediately stops when either floating point overflow or
+underflow occurs.
+3. Prints an error message and immediately stops when floating point overflow occurs,
+but stores a 0 in the variable when it underflows.
+4. Gives you a choice of behaviors when overflow or underflow occurs
+
+type casting 
+A type cast expression lets you manually promote or demote a value. The general format of a type cast expression is
+static_cast<DataType>(Value)
+
+formatting output
+the way a value is printed is called formatting 
+
+working with strings objects and characters
+

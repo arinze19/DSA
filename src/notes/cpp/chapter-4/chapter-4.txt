@@ -1,0 +1,39 @@
+round off errors:
+    To prevent round-off errors from causing this type of problem, 
+    you should stick with greater-than and less-than comparisons with floating-point numbers.
+without a set of braces, the if statement only runs the very next line
+    so if you intend to run multiple statements in an if statement, you should add braces
+short circuit evaluation:
+    If the sub-expression on the left side of an && operator is false, the expression on the right side will not be checked. 
+    Since the entire expression is false if only one of the sub-expressions is false, 
+    it would waste CPU time to check the remaining expres- sion. This is called short circuit evaluation.
+
+logical operator order of precedence:
+    ! 
+    &&
+    ||
+    to avoid errors when using the logical operator (!) you should always enclose the statement in 
+    a parenthesis before using the logical operator (!)
+
+    in this expression, a < b || y == z: "a < b" is evaluated first
+    and in this expression, a < b || y == z && m > j: "y == z" is evaluated first due to && having a higher precedence than || and then evaluating from left to right
+
+
+    when two characters are compared, it is actually their ASCII values that are being compared
+    lowercase letters have a higher ASCII code value than their capital counterparts
+    digits < lowercase letters < uppercase letters
+
+    when full strings are compared -- again, it is actually their ASCII values that are being compared one after the other
+    worth noting that the values inside a ternary expression can actually be expressions to be analyzed rather than just return values;
+
+the switch statement:
+    the expression in a case statement of be of type integer (literal or constant)
+
+    since c++ stores characters as integers under the hood, you can use char variables in switch statements
+
+    The case statements show the program where to start executing in the block and the break statements show the program where to stop.
+    Without the break statements, 
+    the program would execute all of the lines from the matching case statement to the end of the block.
+
+    also worth noting that the default case statement does not need a break statement but it is usually put in there for consistency
+    you can creatively omit break statements to create DRY programs leveraging the fallthrough feature.

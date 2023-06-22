@@ -9,21 +9,20 @@ The `src` folder is divied up into three sections.
 1. algorithms: Implementation of mainstream algorithms
 2. curriculum: Structures learning curriculum and practice questions based of [neetcode](https://neetcode.io)
 3. practice: Practice questions
-
-The `CPE` folder is a separate dedicated folder for notes on inner logic and computer science fundamentals (typically written in C++)
+4. notes: random notes from books and courses 
 
 ```
 src
  |__ algorithms
  |__ curriculum
  |__ practice
-CPE
 ```
 
 ## Texts and Books
 
 1. [Grokking Algorithms](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230) by Aditya Bhargava
 2. [Programming in Typescript](https://www.oreilly.com/library/view/programming-typescript/9781492037644/) by Boris Cherny
+3. [Starting out with cpp from control structures to objects](https://www.amazon.com/Starting-Out-Control-Structures-Objects/dp/0134498372) by Tony Gaddis 
 
 ## Contributing
 
