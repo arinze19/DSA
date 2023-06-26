@@ -1,0 +1,13 @@
+ARRAYS 
+
+- Data types 
+1. char - 1 byte 
+2. int - 4 byte 
+3. long - 8 byte
+4. float - 8 byte
+
+- Properties of an array
+1. Contiguous in nature 
+
+base location + index * (size of type)
+

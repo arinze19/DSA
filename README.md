@@ -7,15 +7,14 @@ notes and practice questions to prepare for my technical interviews
 The `src` folder is divied up into three sections.
 
 1. algorithms: Implementation of mainstream algorithms
-2. curriculum: Structures learning curriculum and practice questions based of [neetcode](https://neetcode.io)
 3. practice: Practice questions
 4. notes: random notes from books and courses 
 
 ```
 src
  |__ algorithms
- |__ curriculum
  |__ practice
+ |__ notes
 ```
 
 ## Texts and Books
