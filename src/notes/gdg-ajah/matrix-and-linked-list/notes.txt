@@ -1,0 +1,42 @@
+LinkedList 
+
+- Types
+1. Simple 
+2. Doubly 
+3. Circular
+
+- Uses 
+
+- Important operations 
+1. reverse 
+2. search 
+3. finding the middle element 
+
+- Patterns 
+1. getting the kth element of the list 
+2. detecting cycles 
+3. getting the middle element 
+
+
+
+Matrix 
+
+- Notes
+1. constructed in rows x columns format - matrix[i][j]
+2. row order - 1,2,3,4,5,6... and column order - 1,4,7,2,5,8
+
+
+- Important operations 
+1. counting number of items
+2. searching for an item 
+3. inserting an item 
+4. deleting an item
+5. transposing an item 
+6. adjoint 
+7. inverse 
+8. rotation
+9. matrix multiplication
+
+- Patterns 
+1. 
+
