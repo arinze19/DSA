@@ -98,10 +98,24 @@ class LinkedList {
 
     return first;
   }
+  reverseTwo() {
+    let current = this.head;
+    let previous = null;
+    let next = null;
+
+    while (current !== null) {
+      next = current.next;
+      current.next = previous;
+      previous = current;
+      current = next;
+    }
+
+    this.head = previous;
+  }
 }
 
 const list = new LinkedList({ value: 5, next: null });
 list.add({ value: 10, next: null });
 list.add({ value: 20, next: null });
-list.delete(5);
+console.log(list.reverseTwo());
 console.log(list.display());
