@@ -27,7 +27,9 @@ Matrix
 
 
 - Important operations 
-1. counting number of items
+1. counting number of items 
+    - O(n) for recursive implementation
+    - O (n * m) for iterative implementation
 2. searching for an item 
 3. inserting an item 
 4. deleting an item

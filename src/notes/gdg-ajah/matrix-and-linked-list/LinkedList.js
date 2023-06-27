@@ -117,5 +117,4 @@ class LinkedList {
 const list = new LinkedList({ value: 5, next: null });
 list.add({ value: 10, next: null });
 list.add({ value: 20, next: null });
-console.log(list.reverseTwo());
-console.log(list.display());
+list.add({ value: 30, next: null });
