@@ -1,5 +1,9 @@
 class Matrix {
-  constructor(rows, cols) {
+  rows: number;
+  cols: number;
+  list: number[][];
+
+  constructor(rows: number, cols: number) {
     this.rows = rows;
     this.cols = cols;
     this.list = [];
@@ -9,7 +13,7 @@ class Matrix {
     }
   }
 
-  insert(item, row, col) {
+  insert(item: number, row: number, col: number) {
     if (row >= this.rows || col >= this.cols) return -1;
     this.list[row][col] = item;
     return 1;
@@ -28,7 +32,7 @@ class Matrix {
     return string;
   }
 
-  search(item) {
+  search(item: number) {
     for (let i = 0; i < this.list.length; i++) {
       for (let j = 0; j < this.list[i].length; j++) {
         if (this.list[i][j] === item) {
@@ -40,7 +44,7 @@ class Matrix {
     return false;
   }
 
-  getIndex(item) {
+  getIndex(item: number) {
     for (let i = 0; i < this.list.length; i++) {
       for (let j = 0; j < this.list[i].length; j++) {
         if (this.list[i][j] === item) {
@@ -52,7 +56,7 @@ class Matrix {
     return [-1, -1];
   }
 
-  reverseRow(rowIndex) {
+  reverseRow(rowIndex: number) {
     if (rowIndex >= this.rows) return -1;
 
     for (let i = 0; i < Math.floor(this.rows / 2); i++) {
@@ -67,7 +71,7 @@ class Matrix {
     return 1;
   }
 
-  reverseColumn(columnIndex) {
+  reverseColumn(columnIndex: number) {
     if (columnIndex >= this.cols) return -1;
 
     for (let i = 0; i < Math.floor(this.cols / 2); i++) {
@@ -93,7 +97,7 @@ class Matrix {
   }
 
   sort() {
-    let temp = [];
+    const temp: number[] = [];
 
     for (let i = 0; i < this.rows; i++) {
       for (let j = 0; j < this.cols; j++) {

@@ -1,9 +1,16 @@
+interface LLNode {
+  value: number;
+  next: LLNode | null;
+}
+
 class LinkedList {
-  constructor(node) {
+  head: LLNode | null;
+
+  constructor(node: LLNode) {
     this.head = node;
   }
 
-  add(node) {
+  add(node: LLNode) {
     let current = this.head;
     let previous = null;
 
@@ -18,7 +25,7 @@ class LinkedList {
     return 1;
   }
 
-  delete(value) {
+  delete(value: number) {
     let current = this.head;
     let previous = null;
 
@@ -40,7 +47,7 @@ class LinkedList {
     return -1;
   }
 
-  search(value) {
+  search(value: number) {
     let current = this.head;
 
     while (current !== null && current.value !== value) {
@@ -80,13 +87,11 @@ class LinkedList {
       current = current.next;
     }
 
-    return middle.value;
+    return middle ? middle.value : null;
   }
-  reverse(node) {
-    let current = node;
-    if (!node) {
-      current = this.head;
-    }
+
+  reverse(node?: LLNode): null | LLNode {
+    const current = node ? node : this.head;
 
     if (current === null || current.next === null) {
       return current;

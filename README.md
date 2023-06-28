@@ -1,19 +1,19 @@
 # DSA-in-ts
 
-notes and practice questions to prepare for my technical interviews
+study notes and practice questions to prepare for my technical interviews
 
 ## Structure
 
 The `src` folder is divied up into three sections.
 
 1. algorithms: Implementation of mainstream algorithms
-3. practice: Practice questions
-4. notes: random notes from books and courses 
+2. data-structures: Data Structures and Practice Questions related to each
+3. notes: random notes from books and courses 
 
 ```
 src
  |__ algorithms
- |__ practice
+ |__ data-structures
  |__ notes
 ```
 

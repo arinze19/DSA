@@ -25,7 +25,6 @@ Matrix
 1. constructed in rows x columns format - matrix[i][j]
 2. row order - 1,2,3,4,5,6... and column order - 1,4,7,2,5,8
 
-
 - Important operations 
 1. counting number of items 
     - O(n) for recursive implementation
@@ -33,10 +32,10 @@ Matrix
 2. searching for an item 
 3. inserting an item 
 4. deleting an item
-5. transposing an item 
+5. transposing an item -
 6. adjoint 
-7. inverse 
-8. rotation
+7. inverse -
+8. rotation -
 9. matrix multiplication
 
 - Patterns 
