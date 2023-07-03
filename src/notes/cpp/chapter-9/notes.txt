@@ -1,0 +1,33 @@
+address operator (&) - returns the memory address of a variable
+each byte of memory has a unique address and a variables address is the first byte allocated to that variable
+
+*pointer variables are usually just called pointers (it "Points" to a piece of data) is a special variable that holds a memory address
+pointer variables (*ptr) and ~reference variables~ 
+
+- nullptr points to the value 0
+uses of the (*) sign
+    - indirecion operator
+    - multiplication operator
+    - definition of a pointer variable (int *ptr)
+
+due to the way variables are stored in memory, an array name is actually a poiner to it's first value
+when you add a value to a pointer, you're actually adding the size of the data type that pointer points to
+    - ptr + 1 = ptr + 1 * sizeof(datatype you're referencing)
+array names are pointer constants - meaning you can't assign them to other variables 
+COMPARING POINTERS 
+    - you can compare pointers, usually as a way to keep them from overflowing a specific range (like in an array for example)
+USING POINTERS AS FUNCTION PARAMETERS
+    - when passing in a pointer that you wouldn't like to be changed (constant), you can use the (const datatype *name) parameter definition
+    - with this definition, you can also pass in pointers that are not constants outside the function scope 
+    - but you can't pass in pointers that are functions into parameters that do not define the parameter as being a constant
+CONSTANT POINTERS
+    - when you initialize a pointer with const, it cannot point to another address (const to pointer) | (int const *name)
+    - when you point a pointer to an address defined with const, you can change the address the pointer points to, but cannot change the content contained in the address the poiner points to (pointer to const) |  (const int *name)
+DYNAMIC MEMORY ALLOCATION
+    - ALLOCATION: iptr = new int || new arr[100] (the new keyword)
+    - DELETION: delete iptr || deleter [] itpr (for arrays) 
+    - when a computer dynamically allocates memory, your program can only refer to those newly created variables through theri memory addresses
+    - when there isn't enough memory available to be allocated to the programs request, the program shuts down with while throwing an exception 
+    PS: 
+        1. failure to release memory can lead to memory leak 
+        2. only delete pointers that were dynamically allocated in the program. trying to delete pointers that were dynamically allocated in the program could spring up unexpected issues

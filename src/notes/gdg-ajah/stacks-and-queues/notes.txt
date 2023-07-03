@@ -1,0 +1,51 @@
+INTRODUCTION
+when thinking about data structutes we generally think along the lines of:
+    - how is data stored
+    - how is the data retrieved 
+    - what are the operations available to me on this structure
+when using a data structure, try to make the data structure as efficient as possible O*(log n) or less
+
+stacks and queues are ABT - abstract data types [made up of primary data types]
+
+STACKS
+1. operate on LIFO
+2. operations - top, empty, size, push and pop
+
+NOTES: 
+1. variables created by a function are stored in the stack frame and is allocated locally
+2. variables created outside user defined functions are located in the heap and can be allocated using malloc or the new keyword
+3. size of the stack mainly is determined by the operating system the program is running on 
+4. when a function is called, a frame is pushed from the stack and when a function is returned, the frame is popped from the stack
+
+APPLICATION
+1. Depth first search in trees and graphs
+
+============================
+
+QUEUES 
+1. operate on FIFO
+2. enqueue (add to the back) and dequeue (remove from the back) operations
+3. others - size, empty, front
+
+LIMITATIONS
+1. using an array means you're limited in the number of items you can store in the QUEUE
+2. using a linked list means you can grow your queue as much as possible 
+
+TYPES 
+1. circular queue 
+2. priority queue
+
+APPLICATION 
+1. Breadth first search in trees and graphs
+
+============================
+
+DEQUEUE
+    - a combination of stacks and queus 
+    - it is a doubly linked list
+    - can use LIFO or FIFO
+
+NOTES: 
+1. depending on the constraint, you can guess if the solution is going to be quadratic or linear 
+    - 10^4 means O(n) or O(log n) time complexity
+    - 10^9 means quadratic time complexity
