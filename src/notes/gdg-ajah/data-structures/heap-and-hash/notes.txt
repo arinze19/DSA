@@ -1,0 +1,69 @@
+============================== HEAPS 
+
+For a heap to be valid, it must conform to the following constructs 
+1. Binary tree: A tree whose root node has two child nodes 
+2. Parent node is either smaller or equal in value to it's child node (MIN HEAP)
+3. Parent node is either larger or equal in value to it's child node (MAX HEAP)
+4. Must be a balanced tree 
+
+COMMON PROBLEMS TO EMPLOY HEAPS: 
+1. Finding the max or min element 
+2. Storing elements in order 
+3. Enables fast insertion, deletion and searching O(log * n)
+4. Heap sort O(n * log * n)
+
+heaps are usually filled from left to right 
+after an insertion of an item into the heap, it performs a heapify operation to correctly rearrange the data structure so it complies with the above rules 
+
+HEAPIFY ALGORITHM:
+1. Create a new node N 
+2. The element to be added to the heap is assigned to this node 
+3. The value of the node N is compared with it's parent node (P[N])
+4. If Parent node (P[N]) is less than (in the case of max-heap) or greater than (in the case of min-heap) swap the child and it's parent 
+5. repeat the process until no parent node violates the above rules
+
+
+TYPES: 
+1. max-heap: this kind of heap keeps the parent node as the highest value 
+2. min-heap: this kind of heap keeps the parent node as the lowest value
+
+USES:
+1. max-heaps are greatly used heap sort algorithms 
+2. min-heaps are greatly used in priority queues 
+
+
+FINDING NODES IN A HEAP:
+To find a specific node in a heap, we use the formula
+
+Parent: floor(i / 2)
+Left-child: 2*i + 1 
+Right-child: 2*i + 2
+
+where i is the index
+
+PROBLEMS: 
+1. implement heapify 
+2. insert an item to the heap
+3. find an item in the heap 
+4. find the parent of an item in the heap [done]
+5. find the children of an item in the heap [done]
+6. remove an item from the heap
+7. traverse and print all items in the heap
+8. heapsort the heap 
+
+
+QUESTIONS:
+1. what is the height of a heap [O(log * n)]
+2. how can we calculate the correct level of a heap in an array?
+
+
+RESOURCES:
+1. Brilliant: https://brilliant.org/wiki/heaps/#:~:text=Heaps%20are%20used%20in%20many,or%20minimum%20element%20very%20quickly.
+
+
+
+
+
+
+
+============================== HASHES

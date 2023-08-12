@@ -1,0 +1,4 @@
+===================== TREES AND GRAPHS ======================
+INTRODUCTION:
+
+an AVL-TREE is a self balancing tree 

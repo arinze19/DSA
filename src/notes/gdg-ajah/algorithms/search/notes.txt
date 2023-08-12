@@ -1,0 +1,33 @@
+Searching Algorithms
+
+1. Algorithm - Specific step/procedure taken to solve a problem or compute a problem
+             - Should be finite 
+             - Domain specific 
+             - Step-wise procedure 
+             - Problem statement should be as clear as possible in order to come up with the correct algorithm 
+
+2. Sorting and Searching go Together 
+    - Without sorting your search is bound to be sequential 
+3. Key terms 
+    - data 
+    - DFS (pre-order, in-order, post-order), BFS, BST etc.
+    - Index 
+    - Search Hit or Search Miss 
+    - indices tables (for storing indexes)
+
+4. GENERAL MEHTODS OF SEARCH 
+    - Linear 
+        - Sequantial and Random
+    - Binary (BST and Binary Heap)
+        - Ordered and Non-sequential 
+5. EFFICIENT METHODS FOR SEARCHING 
+    - Binary Search 
+    - Hash Table 
+    - Red-Black Tree 
+    - Binary Heap
+
+NOTES:
+    - there is an extra cost needed to keep data sorted when inserting and deleting an item from the list 
+    - Searching a Linked list and BST
+    - Searching a Matrix 
+    - Searching a graph (DFS and BFS)
