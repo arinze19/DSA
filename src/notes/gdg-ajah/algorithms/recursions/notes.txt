@@ -1,0 +1,29 @@
+================ RECURSION ===================
+1. Dynamic Programming 
+2. Back-Tracking
+
+================= NOTES ======================
+1. Recursion breaks down the problem into sub-problems until it's the smallest problem you can possibly solve
+2. Recursive problems can either have a linear structure (as is the case with fibonacci numbers) or a recursive structure (as is the case with merge sort)
+3. At any point in time, the height of a recursive stack is the height of the tree
+4. Base case is the smallest sub-unit your recursive problem can have 
+5. Base cases can be implictly or explicitly defined 
+6. Tail recursion is an optimization technique where all the work in the function is done before a recursive call is made
+
+
+=============== BACK-TRACKING =================
+1. This involves trying out all possible solutions and choosing all of them or only the best ones 
+2. Doesn't always require a cache
+3. Determines early on if a track will give an answer or not 
+
+=============== DYNAMIC PROGRAMMING =================
+1. Always requires a cache 
+2. Can be solved by top-down (recursive and memoization) or bottom-up (iterative)
+
+
+=============== ANALYSIS =================
+1. Runtime of a recursive algorithm is 2^(no of nodes in the recursive tree) * (work done per node)
+2. Space complexity is usually O(n)
+
+=============== PROBLEM SOLVING =================
+1. Do not get overwhelmed by the big picture, pick up the smallest unit of the problem and solve
