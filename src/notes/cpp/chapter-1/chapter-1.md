@@ -1,1 +1,0 @@
-### Chapter One: Introduction to Computers and Programming 
