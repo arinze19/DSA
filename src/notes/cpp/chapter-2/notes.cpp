@@ -1,9 +1,18 @@
 #include <iostream>
 #include <iomanip>
+#include <string>
 
 int main()
 {
-    double value = 12.5 * 3;
-    // std::cout << std::fixed << std::setprecision(2) << value << std::endl;
-    std::cout << value << "this is from the value" << std::endl;
+    // float distance;
+    // double mass;
+
+    // distance = 1.495979E11;
+    // mass = 1.989E30;
+
+    // std::cout << "The Sun is " << distance << " meters away.\n";
+    // std::cout << "The Sun\'s mass is " << mass << " kilograms.\n";
+
+    float calculate = 5 / 2.0;
+    std::cout << "The result is " << calculate << std::endl;
 }

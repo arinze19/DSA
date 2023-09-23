@@ -89,3 +89,26 @@ char letter = "g" // incorrect
 Although the char data type is used for storing characters, it is actually an integer data type that typically uses 1 byte of memory. (The size is system dependent. On some systems, the char data type is larger than 1 byte.)
 
 In C++ an extra byte is appended to the end of string literals when they are stored in memory. In this last byte, the number 0 is stored. It is called the null terminator or null character, and it marks the end of the string.
+
+3. **Floating Point**
+   Computers typically use E notation to represent floating-point values. In E notation, the number 47,281.97 would be 4.728197E4. The part of the number before the E is the man- tissa, and the part after the E is the power of 10. When a floating point number is stored in memory, it is stored as the mantissa and the power of 10.
+
+Floating point numbers `float` - single precision
+Double Floating point numbers `double` - double precision
+
+Floating point literals are usually stored as doubles
+
+> You can determine the size of a data type using the `sizeof` operator
+
+```cpp
+sizeof(int) // 4
+```
+
+**Integer Division**
+
+1. When both operands in a division operation are integers, the result will be an integer
+2. In order for a division to return a floating point result, one of the operands must be a floating point literal
+
+**Named Constants**
+
+1. A named constant is an identifier that represents a value that cannot be changed during the execution of a program
