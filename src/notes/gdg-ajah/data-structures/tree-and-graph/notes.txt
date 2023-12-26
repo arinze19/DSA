@@ -1,4 +1,16 @@
 ===================== TREES AND GRAPHS ======================
 INTRODUCTION:
 
+
+============= BINARY TREE =============
+Full binary tree:
+Perfect binary tree:
+    1. Number of nodes double down the tree
+    2. Number of current level nodes can be gotten by (sum of nodes above level + 1)
+============= BINARY SEARCH TREE =============
+
+
+
+
+
 an AVL-TREE is a self balancing tree 
