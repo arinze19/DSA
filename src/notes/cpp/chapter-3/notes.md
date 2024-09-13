@@ -31,4 +31,20 @@
 | unsigned int       | 8    |
 | int                | 9    |
 
-**Type Conversions**
+When a value is converted to a higher data type, it is said to be promoted. To demote a value means to convert it to a lower data type. Let’s look at the specific rules that govern the evaluation of mathematical expressions.
+
+rule 1: chars, shorts and unsigned shorts are promoted to int before any operation is performed
+rule 2: when an operation takes place, the lower ranking value is promoted to the same as the upper ranking value
+rule 3: when final value is computer, the value is then converted again to the data type it's variable was/is assigned
+
+**Type Casting**
+Type casting allows you to perform manual data type conversions. It let's you manually promote or demote a value. The general format of a type cast conversion is
+
+```cpp
+static_cast<DataType>(value)
+```
+
+**Stream Manipulators**
+
+1. By default the system prints out floating point values with 6 significant numbers
+2. std::fixed stream manipulator forces the system to print values in decimal point notation (may default to scientific notation in some cases)
