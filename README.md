@@ -25,7 +25,3 @@ src
 ## Contributing
 
 Please feel free to fork the [REPO](https://github.com/arinze19/DSA-in-ts.git) or open up a [PR](https://github.com/arinze19/DSA-in-ts/pulls) with new ideas.
-
-## Side Note
-
-Although this repository primarily serves `typescript` solutions, I occasionally write `c++` solutions as well to take a slightly higher control of memory management and runtime.
