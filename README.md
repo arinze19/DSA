@@ -1,4 +1,4 @@
-# DSA-in-ts
+# DSA
 
 study notes and practice questions to prepare for my technical interviews
 
